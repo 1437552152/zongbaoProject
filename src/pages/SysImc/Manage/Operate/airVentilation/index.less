@@ -1,0 +1,193 @@
+@font-face {
+  font-family: timeNumber;
+  src: url(@/assets/font/DS-DIGI.ttf);
+}
+
+.air_box {
+  .monitor_left {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  :global {
+    .ant-card {
+      min-height: 80vh;
+    }
+
+    .ant-form-item {
+      margin-bottom: 10px;
+    }
+  }
+
+  .monitor_right {
+    width: 100%;
+    height: 100%;
+
+    .right_title {
+      width: 100%;
+      line-height: 50px;
+      position: relative;
+
+      img {
+        width: 32px;
+        height: 32px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .personCTitleTxt {
+        width: 100%;
+        height: auto;
+        line-height: 50px;
+        font-size: 18px;
+        color: #3c5bce;
+        padding: 0 40px;
+        margin: 0;
+      }
+    }
+
+    .monitor_right_content {
+      width: 100%;
+      height: auto;
+      // margin-top: 20px;
+
+      :global {
+        .ant-tabs {
+          color: #272727;
+        }
+
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+          background: #f7fcff !important;
+          border: solid 1px #d7dee5 !important;
+        }
+
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
+          color: #3c5bce;
+          background: #fff !important;
+          border-bottom: 1px solid #fff !important;
+        }
+
+        .ant-tabs-card .ant-tabs-card-bar {
+          border-bottom: 1px solid #d7dee5 !important;
+        }
+
+        .ant-col-6 {
+          &:nth-of-type(n + 5) {
+            margin-top: 20px;
+          }
+        }
+      }
+
+      .charts_box {
+        width: 100%;
+        height: auto;
+        border: solid 1px #d2dbe3;
+
+        .charts_top {
+          width: 100%;
+          height: auto;
+          position: relative;
+          text-align: center;
+          padding: 15px 0;
+
+          img {
+            display: inline-block;
+            width: auto;
+            height: auto;
+          }
+        }
+
+        .charts_middle {
+          width: 100%;
+          height: auto;
+          padding: 20px 0 24px;
+          border-top: solid 1px #e2e2e2;
+          border-bottom: solid 1px #e2e2e2;
+
+          .charts_val {
+            font-family: timeNumber;
+            width: 100%;
+            height: auto;
+            font-size: 110px;
+            color: #212121;
+            text-align: center;
+            line-height: 110px;
+          }
+
+          .charts_tip {
+            width: 100%;
+            height: auto;
+            line-height: 28px;
+            font-size: 20px;
+            color: #212121;
+            text-align: center;
+            position: relative;
+            margin-top: 20px;
+
+            .tip_left {
+              width: 28px;
+              height: auto;
+              position: absolute;
+              top: 0;
+              left: 30px;
+            }
+
+            .tip_right {
+              width: 28px;
+              height: auto;
+              position: absolute;
+              top: 0;
+              right: 30px;
+            }
+          }
+        }
+
+        .charts_bottom {
+          width: 100%;
+          height: auto;
+          line-height: 24px;
+          padding: 15px 0;
+          text-align: center;
+          font-size: 16px;
+          color: #212121;
+
+          :global {
+            .ant-row {
+              .ant-col-12:nth-of-type(2n + 1) {
+                color: #747a98;
+                font-size: 14px;
+                text-align: right;
+                padding-right: 6px;
+              }
+
+              .ant-col-12:nth-of-type(2n) {
+                color: #212121;
+                font-size: 14px;
+                text-align: left;
+                padding-left: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.set_dialog {
+  :global {
+    .ant-modal-content {
+      .ant-modal-body {
+        padding: 24px 44px;
+
+        .ant-form-item {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

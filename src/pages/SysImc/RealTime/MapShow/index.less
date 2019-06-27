@@ -1,0 +1,106 @@
+.homemapparent {
+  :global {
+    .BMap_cpyCtrl {
+      display: none !important;
+    }
+    .anchorBL {
+      display: none !important;
+    }
+    .ant-select-arrow {
+      width: 35px;
+      height: 30px;
+      position: absolute;
+      top: 8px;
+      color: #2596ff;
+      right: 7px;
+      cursor: pointer;
+      padding-top: 3px;
+    }
+    .ant-select-selection:focus {
+      box-shadow: none !important;
+    }
+    .ant-select-selection:hover {
+      color: #1890ff !important;
+    }
+    .ant-select-selection-selected-value {
+      color: #1890ff !important;
+    }
+    .ant-select-selection {
+      padding-left: 10px !important;
+      line-height: 30px !important;
+      color: #1890ff !important;
+      font-weight: bold;
+      background: none !important;
+      border: 0 !important;
+    }
+  }
+}
+.carDiv {
+  position: absolute;
+  top: 50px;
+  background: #fff;
+  width: 380px;
+  right: 50px;
+  .tabTitleSle {
+    background: #fff;
+    display: inline-flex;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    color: #747a98;
+    padding: 10px;
+  }
+  .carTab {
+    display: inline-flex;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .carImg {
+    display: inline-flex;
+    text-align: center;
+    width: 100%;
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  .carTitle {
+    display: inherit;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+  }
+  .carTableft {
+    margin: 10px;
+    width: 120px;
+  }
+  .carTabright {
+    margin: 20px 0px 20px 0px;
+    border-left: 1px solid #ccc;
+    display: grid;
+    li {
+      display: inline-flex;
+      padding-left: 20px;
+      p {
+        width: 110px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.mapDiv {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+.mapModal {
+  width: 920px !important;
+  :global {
+    .ant-modal-footer {
+      display: none;
+    }
+  }
+}

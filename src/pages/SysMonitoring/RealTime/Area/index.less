@@ -1,0 +1,68 @@
+@import '~antd/lib/style/themes/default.less';
+
+@areaHight: 750px;
+@areaContentHeight: calc(@areaHight - 54px - 48px);
+.title {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 22px;
+    height: 22px;
+    margin-right: 11px;
+  }
+  span {
+    font-size: 16px;
+    color: #242424;
+    font-family: MicrosoftYaHei;
+  }
+}
+
+.card {
+  height: @areaHight;
+}
+.contentContainer {
+  position: relative;
+  display: flex;
+  flex: 1;
+  height: @areaContentHeight;
+  flex-direction: row;
+  align-items: flex-start;
+  border: 1px solid #cdd6df;
+}
+
+.mapContainerScroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 0 auto;
+}
+.mapContainer {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  position: relative;
+  .imgBg {
+    height: calc(@areaContentHeight - 2px);
+  }
+}
+
+.tags {
+  position: absolute;
+  display: flex;
+  right: 20px;
+  top: 20px;
+  z-index: 2000;
+  div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 24px;
+  }
+  span {
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    font-weight: bold;
+    color: rgba(36, 36, 36, 1);
+    margin-left: 4px;
+  }
+}

@@ -1,0 +1,131 @@
+@import '~antd/lib/style/themes/default.less';
+
+@treeItemHeight: 60px;
+
+.tree {
+  padding: 0 10px !important;
+  .title {
+    display: flex;
+    flex: 1 1 auto;
+    overflow: hidden;
+    font-size: 16px;
+  }
+
+  li {
+    border-top: 1px solid #d2dbe3;
+  }
+
+  > li:first-child {
+    border-top: none !important;
+  }
+
+  .content {
+    flex: 1 1 auto;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .control {
+    display: inline-block;
+    flex: 0 0 40px;
+    color: #3c5bce;
+    font-size: 20px;
+    text-align: right;
+  }
+
+  :global {
+    .ant-tree-node-content-wrapper {
+      display: inline-flex !important;
+      width: calc(100% - 24px);
+      height: auto !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      line-height: 58px !important;
+      vertical-align: middle !important;
+      &::before {
+        //display: none !important;
+        height: 60px !important;
+      }
+      .ant-tree-title {
+        display: flex;
+        flex: 1 1 auto;
+        width: 100%;
+      }
+    }
+
+    .ant-tree-treenode-selected {
+      .ant-tree-node-selected {
+        &::before {
+          background: transparent !important;
+          //display: none !important;
+        }
+        color: #3c5bce !important;
+      }
+
+      .ant-tree-switcher-noop {
+        .ant-tree-switcher-noop();
+        background: url(./dot_hl.png) no-repeat center !important;
+      }
+    }
+
+    .ant-tree-switcher-noop {
+      vertical-align: middle !important;
+      background: url(./dot.png) no-repeat center !important;
+
+      svg {
+        display: none;
+      }
+    }
+
+    .switcherIcon(@bi) {
+      margin-top: 4px !important;
+      vertical-align: middle !important;
+      i {
+        width: 18px;
+        height: 18px;
+        background: url(@bi) no-repeat;
+
+        svg {
+          display: none;
+        }
+      }
+    }
+
+    .ant-tree-switcher.ant-tree-switcher_open {
+      .switcherIcon('./zhankai.png');
+    }
+
+    .ant-tree-switcher.ant-tree-switcher_close {
+      .switcherIcon('./hebing.png');
+    }
+  }
+}
+.processtree {
+  background-color: #f2f4f9;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  .ant-tree-treenode-switcher-close {
+    border-top: none !important;
+  }
+  :global {
+    .ant-tree > li:first-child{padding-top: 0!important}
+    .ant-tree-child-tree-open {
+      background-color: #fff;
+      margin-left: -10px !important;
+      margin-right: -10px !important;
+      padding-right: 10px !important;
+      padding-bottom: 0 !important;
+    }
+    .ant-tree-treenode-switcher-open {
+      margin-left: -18px;
+      margin-right: -10px;
+      padding-left: 18px !important;
+      padding-right: 10px !important;
+      padding-bottom: 0 !important;
+      padding-top: 0 !important;
+    }
+    .ant-tree-treenode-switcher-close{
+      padding-top: 0 !important;
+    }
+  }
+}

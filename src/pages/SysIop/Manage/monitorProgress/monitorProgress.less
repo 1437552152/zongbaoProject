@@ -1,0 +1,199 @@
+@import '~antd/lib/style/themes/default.less';
+.monitorPr {
+  :global {
+    .ant-table-tbody > tr > td {
+      border-bottom: none !important;
+    }
+    .ant-steps {
+      width: 100%;
+      // position: absolute;
+    }
+    .ant-steps-item-icon {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .ant-steps.ant-steps-item-icon:nth-child(1) {
+      background-color: aqua;
+    }
+    .ant-steps.ant-steps-item-icon:nth-child(2) {
+      background-color: blanchedalmond;
+    }
+    .ant-steps.ant-steps-item-icon:nth-child(3) {
+      background-color: aquamarine;
+    }
+    .ant-steps.ant-steps-item-icon:nth-child(4) {
+      background-color: blueviolet;
+    }
+    .ant-steps-item {
+      width: 10%;
+      position: relative;
+    }
+    .ant-steps-item:last-child {
+      width: 20%;
+    }
+    .ant-steps-item-title {
+      position: absolute;
+      top: 70px;
+      left: 0px;
+      right: 0px;
+      text-align: center;
+    }
+  }
+  .item1 {
+    float: left;
+    width: 275px;
+    margin-left: 30px;
+    position: relative;
+    z-index: 5;
+    &:before {
+      position: absolute;
+      content: '';
+      display: flex;
+      width: 100%;
+      height: 8px;
+      // background: #1890ff;
+      background: url(./assets/line.png) repeat-x;
+      background-size: 100% 100%;
+      float: left;
+      z-index: 3;
+      left: 100%;
+      top: 50px;
+      transform: translateX(-50%);
+    }
+    &:nth-of-type(1) {
+      &:after {
+        display: none;
+      }
+    }
+    &:nth-last-of-type(1) {
+      &:before {
+        display: none;
+      }
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      display: flex;
+      width: 50%;
+      height: 8px;
+      // background: #1890ff;
+      background: url(./assets/line.png) repeat-x;
+      background-size: 100% 100%;
+      float: left;
+      z-index: 2;
+      left: 0;
+      top: 50px;
+    }
+    .paixuindex {
+      display: inline-block;
+      line-height: 62px;
+      text-align: center;
+      color: #fff;
+      width: 65px;
+      height: 65px;
+      margin-left: 110px;
+      font-size: 14px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.1);
+      z-index: 4;
+      position: relative;
+      border: 1px solid #c8ccd1;
+    }
+    .span {
+      display: inline-block;
+      line-height: 50px;
+      text-align: center;
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      font-size: 14px;
+      background: linear-gradient(-35deg, #009bff, #4a98e1, #1de2db);
+      border-radius: 50%;
+    }
+
+    p {
+      margin: 0px;
+      text-align: center;
+    }
+    .stepLine {
+      height: 5px;
+      background-color: #e0e0e0;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+      position: relative;
+      top: 32.5px;
+      left: 55%;
+    }
+  }
+}
+.ant-table-thead > tr > th {
+  width: 47.7%;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-content {
+  height: 120px;
+  margin-top: -16px;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-content > .ant-tabs-tabpane {
+  background: #fff;
+  padding: 16px;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-bar {
+  border-color: #fff;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+  border-color: transparent;
+  background: transparent;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+  border-color: #fff;
+  background: #fff;
+}
+
+.menu {
+  margin-top: 20px;
+  fonmt-size: 17px;
+
+  .menubrad {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    padding-left: 0;
+
+    div {
+      justify-content: space-around;
+      display: flex;
+      p {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+.contentlist {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.siderTop {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.siderTopTitleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-end;
+}

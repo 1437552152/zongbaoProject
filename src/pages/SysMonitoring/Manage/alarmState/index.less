@@ -1,0 +1,190 @@
+@background_color: #f9fdff;
+.addeqInput {
+  background: rgba(249, 253, 255, 1);
+  border: 1px solid #f1f3f5;
+}
+
+.ant-select-selection--single {
+  background: #f9fdff;
+}
+
+.ant-form label {
+  font-weight: 500;
+}
+
+.ant-form-item-required::before {
+  display: none;
+}
+
+.model {
+  :global {
+    .ant-form-item-label {
+      width: auto;
+    }
+
+    .ant-modal-body {
+      padding-bottom: 0;
+    }
+
+    .ant-select-selection--single,
+    .ant-input {
+      background: #f9fdff;
+    }
+
+    .ant-modal-title {
+      font-weight: bold;
+    }
+
+    .ant-modal-footer {
+      text-align: center !important;
+      border-top: none;
+      line-height: 50px;
+
+      :global {
+        .ant-btn {
+          background: #418ddd;
+          color: #fff;
+          border-style: solid;
+          border-width: 1px;
+          border-color: #418ddd;
+        }
+      }
+    }
+
+    .ant-form label {
+      font-weight: 500;
+    }
+  }
+
+  .ant-modal-body {
+    padding-bottom: 0 !important;
+  }
+}
+
+.equipmenCMain {
+  //height: 842px;
+  min-width: 900px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 12px;
+
+  :global {
+    .ant-table-thead > tr {
+      background: @background_color;
+      border-bottom: 1px solid #d2dbe3;
+    }
+    .anticon {
+      display: inherit !important;
+    }
+    .ant-table-thead > tr > th:nth-child(4) span {
+      text-align: left !important;
+      display: block;
+    }
+
+    .ant-table-thead > tr > th:nth-child(5) span {
+      text-align: left !important;
+      display: block;
+    }
+
+    .ant-table-thead > tr > th {
+      color: rgba(0, 0, 0, 0.85);
+      font-weight: 500;
+      text-align: left;
+      // background: transparent;
+      border-bottom: 1px solid #e8e8e8;
+      transition: background 0.3s ease;
+    }
+
+    .ant-table-thead > tr > th span {
+      color: #cdd6df;
+    }
+
+    .ant-table-tbody > tr > td {
+      text-align: left !important;
+    }
+  }
+
+  .equipmenCHeadMain {
+    height: 125px;
+    margin: 10px 10px 10px 10px;
+  }
+
+  .alarmStateListMain {
+    margin: 10px 0;
+  }
+
+  #titleImg {
+    float: left;
+    position: relative;
+    width: 28px;
+    height: 28px;
+    top: 5px;
+    line-height: 40px;
+    left: 19px;
+  }
+
+  .equipmenCTitleTxt {
+    height: 17px;
+    float: left;
+    position: relative;
+    left: 28px;
+    font-size: 16px;
+    line-height: 17px;
+    top: 10px;
+    color: rgba(36, 36, 36, 1);
+    font-weight: bold;
+    font-family: MicrosoftYaHei;
+    margin-top: 20px;
+  }
+
+  .equipmenCTitleTxt span {
+    display: block;
+    text-align: center;
+  }
+
+  .equipmenCBtc {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 10px;
+    float: right;
+    right: -15px;
+
+    .equipmenCBtcst {
+      margin: 15px 5px 30px 5px;
+      width: 162px;
+      height: 36px;
+      border-radius: 4px;
+      background-color: #4a98e1;
+
+      img {
+        vertical-align: bottom;
+      }
+    }
+
+    .equipmenCBtcst span {
+      font-size: 16px;
+      font-weight: bold;
+      color: #ffffff;
+      padding-left: 6px;
+      display: inline-block;
+    }
+  }
+
+  // .equipmentCListMain{
+  //   margin: 10px 10px 10px 10px;
+  // }
+}
+
+.eqModalItem {
+  width: 385px !important;
+  margin-left: 45px;
+  margin-bottom: 8px;
+  // float: left;
+}
+
+// main {
+//   padding: 0 !important;
+// }
+.clearfix {
+  clear: both;
+}

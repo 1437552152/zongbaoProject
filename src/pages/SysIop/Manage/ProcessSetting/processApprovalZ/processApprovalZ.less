@@ -1,0 +1,44 @@
+@import '~antd/lib/style/themes/default.less';
+
+.top {
+  font-size: 14px;
+  color: @primary-color;
+  margin-bottom: 24px;
+  span {
+    margin-right: 80px;
+  }
+}
+
+.bottomContainer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #212121;
+  :global {
+    .ant-btn {
+      padding: 4px 40px;
+    }
+  }
+}
+
+.bottomSpan {
+  display: inline-block;
+  min-width: 100px;
+}
+
+.keyValueDisInputContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+  font-size: 14px !important;
+  color: #212121 !important;
+  // min-height: 264px;
+  & > span {
+    min-width: 100px;
+    padding-top: 6px;
+  }
+  :global {
+    .ant-input {
+      width: 440px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import '~antd/lib/style/themes/default.less';
+
+.main {
+  padding: 0;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    label {
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.85);
+    }
+  }
+
+  :global {
+    .ant-form-item {
+      display: flex;
+      width: 100% !important;
+    }
+
+    .ant-form-item-control-wrapper {
+      flex-basis: 0;
+      flex-grow: 1 !important;
+    }
+  }
+}

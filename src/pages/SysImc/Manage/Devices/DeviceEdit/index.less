@@ -1,0 +1,34 @@
+@import '~antd/lib/style/themes/default.less';
+
+.card {
+  width: 368px;
+}
+
+.imageCard {
+  width: 368px;
+}
+
+.container {
+  :global {
+    .ant-card-body {
+      padding: 20px 0 0 5px;
+      zoom: 1;
+    }
+
+    .ant-row.ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+
+  .basicInfo {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bottomContent {
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}

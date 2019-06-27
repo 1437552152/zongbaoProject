@@ -1,0 +1,146 @@
+@import '~antd/lib/style/themes/default.less';
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.col1 {
+  flex-basis: 100%;
+}
+.col2 {
+  flex-basis: 50%;
+}
+.col3 {
+  flex-basis: 33.33%;
+}
+.col4 {
+  flex-basis: 25%;
+}
+.ant-layout .ant-layout-content {
+  margin-top: 39px;
+  border-radius: 12px;
+  width: 1579px;
+  height: 842px;
+  background: rgba(255, 255, 255, 1);
+  .tableCount {
+    :global {
+      .ant-table-thead > tr {
+        background: #41c7db;
+        color: #cdd6df;
+      }
+      .ant-table-thead > tr > th:last-child span {
+        display: block;
+        text-align: center;
+      }
+      .ant-table-tbody > tr > td:last-child a {
+        display: block;
+        text-align: center;
+      }
+      .ant-table-thead > tr > th {
+        border: 1px solid #000;
+      }
+      .ant-table-tbody > tr > td {
+        border: 1px solid #000;
+      }
+    }
+  }
+}
+// main {
+//   margin-left: 41px;
+//   margin-top: 39px;
+//   border-radius: 12px;
+// }
+.ant-table-thead tr {
+  color: #cdd6df !important;
+}
+.mainlst {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: #fff;
+
+  :global {
+    .anticon {
+      display: inherit !important;
+    }
+  }
+  .mainlast2 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  :global {
+    .ant-select-selection--single {
+      background: #f9fdff;
+    }
+    .ant-calendar-picker-input {
+      background: #f9fdff !important;
+    }
+    .ant-cascader-picker {
+      background: #f9fdff;
+    }
+    .ant-input {
+      background: #f9fdff;
+    }
+    .ant-form-item {
+      display: inline-flex;
+    }
+    .ant-form-item-label {
+      width: auto;
+      text-align: left;
+      & > label {
+        color: rgba(0, 0, 0, 0.85);
+      }
+    }
+  }
+}
+
+.main {
+  :global {
+    .ant-modal-title {
+      font-weight: bold;
+    }
+    .ant-form-item {
+      display: flex;
+    }
+    .ant-form-item-label {
+      width: auto;
+    }
+    .ant-select-selection--single,
+    .ant-input {
+      background: #f9fdff;
+    }
+
+    .ant-modal-body {
+      padding-bottom: 0;
+      width: 70%;
+      margin: auto;
+
+      .ant-form-item-control-wrapper {
+        flex: 1 1 auto;
+      }
+    }
+
+    .ant-modal-footer {
+      text-align: center !important;
+      border-top: none;
+      line-height: 50px;
+
+      :global {
+        .ant-btn {
+          background: #418ddd;
+          color: #fff;
+          border-style: solid;
+          border-width: 1px;
+          border-color: #418ddd;
+        }
+      }
+    }
+
+    .ant-form label {
+      font-weight: 500;
+    }
+  }
+}
+
+

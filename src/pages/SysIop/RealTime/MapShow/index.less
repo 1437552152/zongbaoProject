@@ -1,0 +1,372 @@
+.homemapparent {
+  :global {
+    .BMap_cpyCtrl {
+      display: none !important;
+    }
+    .BMap_stdMpCtrl {
+      left: 435px !important;
+    }
+    .anchorBL {
+      display: none !important;
+    }
+  }
+}
+.tabDiv {
+  position: absolute;
+  top: 20px;
+  width: 400px;
+  height: 580px;
+  background-color: rgba(60, 91, 206, 0.6);
+  margin: 20px 20px 20px 20px;
+  .tabPaneDiv {
+    margin: 10px 10px 10px 10px;
+    .tabTitle {
+      width: 100%;
+      height: 100%;
+      padding-top: 20px;
+      background: #faf7f7;
+      font-weight: bold;
+    }
+    :global {
+      .ant-tabs-tab {
+        text-align: center !important;
+        height: 90px;
+        width: 80px;
+        background: @primary-color;
+        padding: 0 !important;
+      }
+      .tabImgbaojing {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        margin: 0 auto;
+        background-position-x: center;
+        background: url('./mapicon/baojing-normal.png');
+      }
+      .tabImgzhiban {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        margin: 0 auto;
+        background-position-x: center;
+        background: url('./mapicon/zhiban-normal.png');
+      }
+      .tabImgpd {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        margin: 0 auto;
+        background-position-x: center;
+        background: url('./mapicon/gongzuojian-normal.png');
+      }
+      .tabImgry {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        margin: 0 auto;
+        background-position-x: center;
+        background: url('./mapicon/whry-normal.png');
+      }
+      .ant-tabs-tab-active > div {
+        background: #fff !important;
+        opacity: 1 !important;
+      }
+      .ant-tabs-tab-active .tabImgbaojing {
+        background: url('./mapicon/baojing-hover.png');
+      }
+      .ant-tabs-tab-active .tabImgzhiban {
+        background: url('./mapicon/zhiban-hover.png');
+      }
+      .ant-tabs-tab-active .tabImgpd {
+        background: url('./mapicon/gongzuojian-hover.png');
+      }
+      .ant-tabs-tab-active .tabImgry {
+        background: url('./mapicon/whry-hover.png');
+      }
+      .ant-timeline-item {
+        width: 270px;
+        left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        cursor: pointer;
+      }
+      .ant-timeline-item-tail {
+        border-left: 2px dotted #ccc;
+      }
+      .ant-timeline-item-head {
+        background: none !important;
+      }
+      .ant-card-body {
+        padding: 5px !important;
+      }
+      .ant-tabs-left-content {
+        background: #fff;
+        padding-left: 0px;
+      }
+      .ant-select-arrow {
+        width: 35px;
+        height: 30px;
+        position: absolute;
+        top: 8px;
+        color: #2596ff;
+        right: 7px;
+        cursor: pointer;
+        padding-top: 3px;
+      }
+      .ant-select-selection:focus {
+        box-shadow: none !important;
+      }
+      .ant-select-selection {
+        padding-left: 10px !important;
+        line-height: 30px !important;
+        color: #1890ff !important;
+        font-weight: bold;
+        background: none !important;
+        border: 0 !important;
+      }
+    }
+    .tabTitleSle {
+      background: #fff;
+      display: inline-flex;
+      width: 100%;
+      height: 50px;
+      border-bottom: 1px solid #ccc;
+      color: #747a98;
+      padding: 10px;
+    }
+    .slidernewtitle {
+      height: 50px;
+      width: 100%;
+      color: @primary-color;
+      font-size: 16px;
+      border-radius: 5px;
+      padding-top: 12px;
+      background: #e5e6e9;
+      padding-left: 20px;
+      display: inline-flex;
+    }
+    .slidernewtitle::before {
+      position: relative;
+      top: 3px;
+      content: '';
+      width: 5px;
+      height: 20px;
+      background: @primary-color;
+      border-radius: 3px;
+      display: inline-flex;
+      margin-right: 5px;
+    }
+    .sliderlastnum {
+      position: relative;
+      left: 10px;
+      background: red;
+      width: 40px;
+      height: 20px;
+      text-align: center;
+      border-radius: 10px;
+      color: #fff;
+      top: 3px;
+    }
+    .slidershowimg {
+      width: 30px;
+      height: 30px;
+      border: 1px dotted;
+      border-color: #000;
+      position: relative;
+      left: 100px;
+      cursor: pointer;
+    }
+    .sliderhideimg {
+      width: 30px;
+      height: 30px;
+      border: 1px solid;
+      border-color: #ccc;
+      position: relative;
+      left: 100px;
+      cursor: pointer;
+    }
+    .slidernew {
+      height: 515px;
+      overflow-y: auto;
+      color: #747a98;
+      overflow-x: hidden;
+      .thetitle {
+        font-weight: bold;
+        color: #000;
+      }
+    }
+    .sliderdotred {
+      position: relative;
+      top: 20px;
+      width: 28px;
+      height: 28px;
+      background: url(./mapicon/red.png);
+      border-radius: 7px;
+    }
+    .sliderdotcheng {
+      position: relative;
+      top: 20px;
+      width: 28px;
+      height: 28px;
+      background: url(./mapicon/cheng.png);
+      border-radius: 7px;
+    }
+    .sliderdotlan {
+      position: relative;
+      top: 20px;
+      width: 28px;
+      height: 28px;
+      background: url(./mapicon/lan.png);
+      border-radius: 7px;
+    }
+    .sliderdotlv {
+      position: relative;
+      top: 20px;
+      width: 28px;
+      height: 28px;
+      background: url(./mapicon/lv.png);
+      border-radius: 7px;
+    }
+  }
+}
+
+.mapDiv {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.mapcardDiv {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  .cardDiv {
+    margin-top: 10px;
+  }
+  .cardul {
+    display: flex;
+    margin-bottom: 3px;
+  }
+  .carddotbored {
+    position: relative;
+    width: 24px;
+    height: 8px;
+    border-radius: 15px;
+    background: #ff0000;
+  }
+  .carddot {
+    width: 16px;
+    height: 16px;
+    background: #ff0000;
+    border-radius: 10px;
+  }
+  .cardline {
+    position: relative;
+    top: 12px;
+    left: -5px;
+    width: 300px;
+    height: 8px;
+    background: #e5e6e9;
+    border-radius: 4px;
+  }
+  .carchartcenter {
+    position: absolute;
+    left: 210px;
+    top: 130px;
+    width: 76px;
+    height: 90px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .personEchart {
+    position: relative;
+    width: 380px;
+    height: 250px;
+  }
+  .numlegend {
+    display: inline-flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    .carlegenleftDiv {
+      display: flex;
+      margin-top: 5px;
+    }
+    .carlegendout {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #00ff00;
+      border-radius: 15px;
+      text-align: center;
+    }
+    .carlegendis {
+      position: relative;
+      width: 15px;
+      height: 15px;
+      background: #00ff00;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+    .carlegendsp {
+      padding-left: 10px;
+      width: 70px;
+      color: #000;
+    }
+  }
+  :global {
+    .ant-card-head-title {
+      color: @primary-color;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .ant-card-head-title::before {
+      position: relative;
+      top: 7px;
+      background: @primary-color;
+      content: '';
+      width: 6px;
+      height: 27px;
+      display: inline-flex;
+      border-radius: 3px;
+      margin-right: 10px;
+    }
+  }
+}
+.maplegend {
+  position: absolute;
+  margin-left: 20px;
+  width: 100px;
+  height: 85px;
+  bottom: 40px;
+  background: rgb(255, 255, 255, 0.5);
+  border-radius: 10px;
+  .maplegenleftDiv {
+    display: flex;
+    width: 90px;
+    margin: 10px auto;
+  }
+  .maplegendoutlan {
+    width: 28px;
+    height: 28px;
+    background: url('./mapicon/lan.png');
+  }
+  .maplegendoutcheng {
+    width: 28px;
+    height: 28px;
+    background: url('./mapicon/cheng.png');
+  }
+  .maplegendsp {
+    padding-left: 10px;
+    color: #000;
+  }
+}
+
+.mapModal {
+  width: 920px !important;
+  :global {
+    .ant-modal-footer {
+      display: none;
+    }
+  }
+}

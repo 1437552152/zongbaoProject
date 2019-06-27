@@ -1,0 +1,153 @@
+.water_check {
+  .monitor_left {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  :global {
+    .ant-card {
+      min-height: 80vh;
+    }
+
+    .ant-form-item {
+      margin-bottom: 10px;
+    }
+  }
+
+  .monitor_right {
+    width: 100%;
+    height: 100%;
+
+    .right_title {
+      width: 100%;
+      line-height: 50px;
+      position: relative;
+
+      img {
+        width: 32px;
+        height: 32px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .personCTitleTxt {
+        width: 100%;
+        height: auto;
+        line-height: 50px;
+        font-size: 18px;
+        color: #3c5bce;
+        padding: 0 40px;
+        margin: 0;
+      }
+    }
+
+    .monitor_right_content {
+      width: 100%;
+      height: auto;
+      // margin-top: 20px;
+
+      :global {
+        .ant-tabs {
+          color: #272727;
+        }
+
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+          background: #f7fcff !important;
+          border: solid 1px #d7dee5 !important;
+        }
+
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
+          color: #3c5bce;
+          background: #fff !important;
+          border-bottom: 1px solid #fff !important;
+        }
+
+        .ant-tabs-card .ant-tabs-card-bar {
+          border-bottom: 1px solid #d7dee5 !important;
+        }
+
+        .ant-col-6 {
+          &:nth-of-type(n + 5) {
+            margin-top: 20px;
+          }
+        }
+      }
+
+      .charts_box {
+        width: 100%;
+        height: auto;
+        border: solid 1px #d2dbe3;
+
+        .charts_top {
+          width: 100%;
+          height: auto;
+          position: relative;
+
+          .charts_toop {
+            width: auto;
+            height: auto;
+            padding: 6px 10px;
+            border: solid 1px #3c5bce;
+            border-radius: 3px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            z-index: 5;
+          }
+
+          .charts_toop1 {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 6px 10px;
+            border: solid 1px #3c5bce;
+            border-radius: 3px;
+            background: #3c5bce;
+            color: #fff;
+            cursor: pointer;
+            z-index: 5;
+          }
+        }
+
+        .charts_bottom {
+          width: 100%;
+          height: auto;
+          line-height: 40px;
+          text-align: center;
+          font-size: 16px;
+          color: #212121;
+          border-top: solid 1px #d2dbe3;
+          margin-top: -50px;
+          :global {
+            .ant-col-8 {
+              color: #747a98;
+              font-size: 14px;
+            }
+            .ant-col-16 {
+              color: #212121;
+              font-size: 14px;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.set_dialog {
+  :global {
+    .ant-modal-content {
+      .ant-modal-body {
+        padding: 24px 44px;
+        .ant-form-item {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

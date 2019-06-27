@@ -1,0 +1,30 @@
+export default {
+  'menu.home': '首页',
+  'menu.login': '登录',
+  'menu.register': '注册',
+  'menu.register.result': '注册结果',
+  'menu.exception': '异常页',
+  'menu.exception.not-permission': '403',
+  'menu.exception.not-find': '404',
+  'menu.exception.server-error': '500',
+  'menu.exception.trigger': '触发错误',
+  // 'menu.recordview': '触发错误',
+
+  // ====================bis=================
+
+  '/realtime.home': '实时首页',
+  '/operation.home': '运维首页',
+  '/operation.addplan': '新增计划',
+  '/operation.plan.planlist': '维护计划',
+  '/operation.WorkforceManagement': '排班管理',
+  '/analysis.home': '分析首页',
+  '/operation.recordview': '纪录查看',
+  '/operation.processSet': '流程设置',
+  '/operation.plan': '设备维修(计划与排班)',
+  '/analysis.electric': '电力分析',
+  '/analysis.ambient': '环境能耗',
+  '/analysis.jfjh': '降峰减耗',
+  '/manage.home': '管理首页',
+  '/manage.deviceAdd': '添加设备',
+  '/manage.deviceEdit': '修改设备',
+};

@@ -1,0 +1,66 @@
+.water_history {
+  :global {
+    .ant-card {
+      min-height: 80vh;
+    }
+  }
+  .history_box {
+    margin: 0;
+    padding: 0 20px;
+  }
+  .right_title {
+    width: 100%;
+    line-height: 50px;
+    position: relative;
+
+    img {
+      width: 32px;
+      height: 32px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .personCTitleTxt {
+      width: 100%;
+      height: auto;
+      line-height: 50px;
+      font-size: 18px;
+      color: #3c5bce;
+      padding: 0 40px;
+      margin: 0;
+    }
+  }
+  .history_left {
+    // border: solid 1px #3c5bce;
+    .charts_box {
+      width: 100%;
+      height: auto;
+      border: solid 1px #d2dbe3;
+
+      .charts_bottom {
+        width: 100%;
+        height: auto;
+        line-height: 40px;
+        text-align: center;
+        font-size: 16px;
+        color: #212121;
+        border-top: solid 1px #d2dbe3;
+        margin-top: -50px;
+        :global {
+          .ant-col-8 {
+            color: #747a98;
+            font-size: 14px;
+          }
+          .ant-col-16 {
+            color: #212121;
+            font-size: 14px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

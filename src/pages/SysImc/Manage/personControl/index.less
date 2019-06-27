@@ -1,0 +1,61 @@
+@background_color: #f9fdff;
+
+.personCMain {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 12px;
+  margin-top: -10px;
+  :global {
+    .ant-table-thead > tr {
+      background: @background_color;
+      border-bottom: 1px solid #d2dbe3;
+    }
+    .ant-table-thead > tr > th:nth-child(4) span {
+      text-align: left !important;
+      display: block;
+    }
+    .ant-table-thead > tr > th:nth-child(5) span {
+      text-align: left !important;
+      display: block;
+    }
+    .ant-table-thead > tr > th {
+      color: rgba(0, 0, 0, 0.85);
+      font-weight: 500;
+      text-align: left;
+      // background: transparent;
+      border-bottom: 1px solid #e8e8e8;
+      transition: background 0.3s ease;
+    }
+    .ant-table-thead > tr > th span {
+      color: #cdd6df;
+    }
+    .ant-table-tbody > tr > td {
+      text-align: left !important;
+    }
+  }
+}
+
+.eqModal {
+  :global {
+    .ant-row {
+      margin: auto;
+      width: 70%;
+    }
+
+    .ant-modal-body {
+      padding-bottom: 0;
+    }
+
+    //.ant-form-item-label {
+    //  width: 100px;
+    //}
+    .ant-modal-footer {
+      text-align: center !important;
+      border-top: none;
+      line-height: 50px;
+    }
+    .ant-select-selection--single,
+    .ant-input {
+      background: #f9fdff;
+    }
+  }
+}
